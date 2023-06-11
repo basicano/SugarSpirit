@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:text="Enter OTP"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/otp_et"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_marginTop="16dp"
+            android:focusedByDefault="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resend_otp_tv"
+            android:layout_toLeftOf="@+id/resend_otp_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Resend OTP"
+            android:textColor="@color/light_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resend_otp_timer"
+            android:text="30s"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:background="@drawable/button_bg"/>
+
+
+
+</LinearLayout>

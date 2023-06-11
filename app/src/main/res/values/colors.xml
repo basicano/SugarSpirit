@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="contrast_badge">#FDC84B</color>
+    <color name="title">#A95329</color>
+    <color name="app_bg">#40C6783C</color>
+    <color name="card_bg">#FFFCFA</color>
+    <color name="button_cl">#CA5A23</color>
+    <color name="grey">#807B7B</color>
+    <color name="light_grey">#C5C3C3</color>
+    <color name="green">#CCB7EC28</color>
+</resources>

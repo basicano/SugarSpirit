@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    tools:context=".CartActivity">
+
+
+        <include
+            android:id="@+id/toolbars"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_bg"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/toolbars">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/user_cart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cart_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:visibility="visible"
+                    tools:itemCount="3"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkout_cart_btn"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SubTotal"
+                    android:layout_weight=".5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/subtot_ca_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs_default"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="right"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:weightSum="1">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/gst"-->
+<!--                    android:layout_weight=".50"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_total_vat"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Rs 00.00"-->
+<!--                    android:layout_weight=".50"-->
+<!--                    android:gravity="right"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:paddingRight="5dp"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charges"
+                    android:layout_weight=".5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/delch_ca_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs_default"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tot_amt"
+                    android:layout_weight=".5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/totAmt_ca_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs_default"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/checkout_cart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:layout_margin="12dp"
+                android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

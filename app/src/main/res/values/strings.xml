@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SugarSpirit</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="share">Share</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="collection1">Product Collection 1</string>
+    <string name="collection2">Product Collection 2</string>
+    <string name="btn_view_more">View More</string>
+    <string name="product_description">Product description</string>
+    <string name="product_name">Product Name</string>
+    <string name="add">Add</string>
+    <string name="user_cart">User Cart</string>
+    <string name="checkout">Proceed To Checkout</string>
+    <string name="tot_amt">Total Amount</string>
+<!--    <string name="tot_bill">Total Bill</string>-->
+    <string name="mrp">MRP</string>
+    <string name="rs_default">Rs 00.00</string>
+    <string name="gst_default">5%</string>
+    <string name="gst">GST</string>
+    <string name="cart_mrp">MRP </string>
+    <string name="cart_selprice">sp</string>
+    <string name="profile">Profile</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_to_reg">Do not have an account? <font color="red"> Sign Up</font></string>
+    <string name="reg_to_log">Have an account? <font color="red"> Login Up</font></string>
+    <string name="email_id">Email ID</string>
+    <string name="pass">Password</string>
+    <string name="con_pass">Confirm Password</string>
+    <string name="or_sign_in_w">or Sign In with</string>
+
+    <string name="facebook_app_id">Facebook App ID</string>
+    <string name="facebook_client_token">Facebook Client ID</string>
+    <string name="remember_me">Remember Me</string>
+
+    <string name="inv">Invoice</string>
+    <string name="thank_msg"><b>Your order has been placed successfully.</b> <br> A confirmation email and invoice has been sent to you on </br> </string>
+    <string name="inv_no">Invoice No.</string>
+    <string name="inv_date">Invoice Date</string>
+    <string name="tnc">PLEASE READ THESE TERMS OF USE CAREFULLY. PLEASE REFRAIN FROM USING OUR ONLINE SERVICES IF YOU DO NOT AGREE TO BE BOUND BY THESE TERMS OF USE AND ALL TERMS INCORPORATED BY REFERENCE. <br><br> </br> These Terms do not alter in any way the terms or conditions of any other agreement you may have with Kroger, or our subsidiaries or affiliates, for products, services or otherwise (for example, SugarSpirit Gift Card Terms and Conditions).</br></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="dummy_ph_no">+91-1231231231</string>
+    <string name="inq_with_us">Inquire With Us</string>
+    <string name="user_name">User Name</string>
+    <string name="mob_no">Mobile Number</string>
+    <string name="inq_cmnt">Enter your query here</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:drawableRight="@drawable/ic_email"
+                    android:background = "@drawable/edittext_bg"
+                    android:hint="@string/email_id"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/grey"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:background = "@drawable/edittext_bg"
+                    android:hint="@string/pass"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/grey"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_con_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_con_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:background = "@drawable/edittext_bg"
+                    android:hint="@string/con_pass"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/grey"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox_news_letter"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:backgroundTintMode="multiply"-->
+<!--                android:text="@string/sign_up_news"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16dp"-->
+<!--                android:theme="@style/MyCheckBox"/>-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_btn"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cart_row_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img_cr_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/no_image"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/cart_prod_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/name_cr_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/mrp_cr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_cr_tv"
+            android:text="@string/cart_mrp"
+            android:background="@drawable/strike_thru"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/selprice_cr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_cr_tv"
+            android:layout_toRightOf="@+id/mrp_cr_tv"
+            android:layout_marginLeft="8dp"
+            android:text="@string/cart_selprice"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/wgt_cr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Net Weight"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/card_bg">
+
+            <ImageButton
+                android:id="@+id/remove_cr_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_remove"
+                android:background="@drawable/imgbtn_bg"
+                />
+
+            <TextView
+                android:id="@+id/qtn_cr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/add_cr_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add"
+                android:background="@drawable/imgbtn_bg"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft= "12dp"/>
+
+</LinearLayout>
+

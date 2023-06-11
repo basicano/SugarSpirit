@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_bg"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/card_bg"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_rcvr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_rcvr_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="Receiver Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    card_view:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    card_view:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Delivery Address"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    card_view:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="City"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <RelativeLayout-->
+                <!--                                android:id="@+id/ll_country"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                                android:padding="@dimen/_10sdp"-->
+                <!--                                android:gravity="center_vertical">-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/tv_country"-->
+                <!--                                    android:layout_width="match_parent"-->
+                <!--                                    android:layout_height="wrap_content"-->
+                <!--                                    android:layout_centerVertical="true"-->
+                <!--                                    android:hint="Select Country "-->
+                <!--                                    android:paddingLeft="0dp"-->
+                <!--                                    android:textColor="#000000"-->
+                <!--                                    android:textColorHint="@color/grey"-->
+                <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                <!--                                <ImageView-->
+                <!--                                    android:layout_width="@dimen/_15sdp"-->
+                <!--                                    android:layout_height="@dimen/_15sdp"-->
+                <!--                                    android:layout_alignParentEnd="true"-->
+                <!--                                    android:layout_alignParentRight="true"-->
+                <!--                                    android:layout_centerVertical="true"-->
+                <!--                                    android:src="@mipmap/drop_down" />-->
+
+                <!--                            </RelativeLayout>-->
+
+                <!--                            <LinearLayout-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="1dp"-->
+                <!--                                android:background="@color/black"/>-->
+
+
+                <!--                        </LinearLayout>-->
+
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <RelativeLayout-->
+                <!--                                android:id="@+id/ll_city"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                                android:padding="@dimen/_10sdp">-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/tv_city"-->
+                <!--                                    android:layout_width="match_parent"-->
+                <!--                                    android:layout_height="wrap_content"-->
+                <!--                                    android:background="@null"-->
+                <!--                                    android:gravity="center|left"-->
+                <!--                                    android:hint="Select City"-->
+                <!--                                    android:paddingLeft="0dp"-->
+                <!--                                    android:textColor="#000000"-->
+                <!--                                    android:textColorHint="@color/grey"-->
+                <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                <!--                                <ImageView-->
+                <!--                                    android:layout_width="@dimen/_15sdp"-->
+                <!--                                    android:layout_height="@dimen/_15sdp"-->
+                <!--                                    android:layout_alignParentEnd="true"-->
+                <!--                                    android:layout_alignParentRight="true"-->
+                <!--                                    android:layout_centerVertical="true"-->
+                <!--                                    android:src="@mipmap/drop_down" />-->
+
+
+                <!--                            </RelativeLayout>-->
+
+                <!--                            <LinearLayout-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="1dp"-->
+                <!--                                android:background="@color/black"/>-->
+
+
+                <!--                        </LinearLayout>-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_pin_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    card_view:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_pin_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="Pin Code"
+                        android:inputType="number"
+                        android:maxLength="6"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_addr_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="Add Delivery Address"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"  />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </ScrollView>
+</LinearLayout>

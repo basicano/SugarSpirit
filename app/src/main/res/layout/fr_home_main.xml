@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:padding="16dp">
+
+    <SearchView
+        android:id="@+id/search_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        android:queryHint="Search for confectioneries"
+        android:iconifiedByDefault="false"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/card_bg">
+
+                    <TextView
+                        android:id="@+id/tv_collection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/title"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/collection1"
+
+                        android:textColor="@color/white" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_collection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:padding="10dp"
+                        android:scrollbars="vertical"
+                        tools:itemCount="2"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/btn_view_more"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_bg"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                card_view:cardCornerRadius="4dp"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/card_bg">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_collection2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:background="@color/title"-->
+<!--                        android:text="@string/collection2"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/rv_collection2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:scrollbars="vertical"-->
+<!--                        android:padding="10dp"/>-->
+
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="5dp"-->
+<!--                        android:text="@string/btn_view_more"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:background="@drawable/button_bg"-->
+<!--                        android:visibility="visible" />-->
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
